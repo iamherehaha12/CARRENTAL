@@ -8,13 +8,15 @@ import org.springframework.web.bind.annotation.RestController;
 import com.knowit.entities.User;
 import com.knowit.entities.UserLogin;
 import com.knowit.services.UserService;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 
-
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 public class UserController {
 	@Autowired
